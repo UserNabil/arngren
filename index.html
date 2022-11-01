@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    
     <link rel="icon" href="assets/logo.png" sizes="32x32">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,20 +51,15 @@
         <div id="cart" class="container">
             <div class="shopping-cart">
                 <div class="shopping-cart-header">
-                    <span class="badge">4</span>
+                    <span class="badge"></span>
                     <div class="shopping-cart-total">
                         <span class="lighter-text">Total:</span>
-                        <span class="main-color-text">$30</span>
+                        <span class="main-color-text"></span>
                     </div>
                 </div>
     
-                <ul class="shopping-cart-items">
-                    <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                    <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                    <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                    <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <ul id="addToCart" class="shopping-cart-items">
                 </ul>
-    
                 <a id="checkout" class="button">Checkout</a>
             </div>
         </div>
@@ -75,7 +70,17 @@
             <h1>HomePage</h1></div>
            
         <div id="product">
-            <h1>Our Product</h1>
+            <div class="wrapper">
+                <h1>Our product</h1>
+                <h3>
+                    <a id="all">All</a>
+                    <a id="cars">Cars</a>
+                    <a id="house">House</a>
+                    <a id="animals">Animals</a>
+                </h3>
+                <div class="cont">
+                </div>
+            </div>
         </div>
            
         <div id="payment">
@@ -124,13 +129,10 @@
             </div>
             <div class="col-25">
                 <div class="containe">
-                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b class="qty"></b></span></h4>
+                <div id="e"></div>
                 <hr>
-                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                <p>Total <span class="price" style="color:black"><b class="totalPrice"></b></span></p>
                 </div>
             </div>
             </div>
@@ -139,4 +141,7 @@
         <div id="footer"></div>
     </div>
 </body>
+<footer>
+    <script src="index.js" defer></script>
+</footer>
 </html>
